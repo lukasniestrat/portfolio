@@ -4,16 +4,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'Lukas Niestrat - Webdesign & Frontend Entwicklung',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Moin! 👋 Ich bin Lukas, leidenschaftlicher Webdesigner und Frontend Entwickler aus dem schönen Ostfriesland. Ich gestalte und programmiere Websites, Anwendungen und andere digitale Produkte.' },
+      { name: 'author', content: 'Lukas Niestrat' },
+      { name: 'keywords', content: 'Design, Webdesign, Entwicklung, Webentwicklung, Programmierung, JavaScript, HTML' },
+      { name: 'robots', content: 'index, follow' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/icon', href: '/favicon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
