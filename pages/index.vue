@@ -24,6 +24,21 @@
             </div>
             <div class="box__header__content--text">
               <nuxt-content :document="content" />
+              <ul class="socialmedia">
+                <li>
+                  <a href="https://github.com/lukasniestrat" target="_blank">
+                    <GithubIcon :height="25" :width="25" color="#fff" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://instagram.com/thereallukasniestrat"
+                    target="_blank"
+                  >
+                    <InstagramIcon :height="25" :width="25" color="#fff" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -43,10 +58,14 @@
 <script lang="ts">
 import Vue from "vue";
 import Legal from "./../components/Legal.vue";
+import Instagram from "./../components/Instagram.vue";
+import Github from "./../components/Github.vue";
 
 export default Vue.extend({
   components: {
     AppLegal: Legal,
+    InstagramIcon: Instagram,
+    GithubIcon: Github,
   },
   async asyncData({ $content, error }) {
     try {
@@ -199,6 +218,16 @@ export default Vue.extend({
     }
 
     align-self: flex-end;
+  }
+
+  .socialmedia {
+    display: flex;
+    margin-top: 25px;
+
+    li {
+      list-style: none;
+      margin-right: 10px;
+    }
   }
 }
 </style>
